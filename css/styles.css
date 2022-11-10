@@ -1,0 +1,336 @@
+:root {
+  --logo-color: #2196f3;
+  --hover-link-color: #2196f3;
+  --background-button-color: #2196f3;
+
+  --first-main-color: #757575;
+  --second-main-color: #212121;
+  --third-main-color: #ffffff;
+  --background-block-color: #2f303a;
+}
+/* -------------------- Загальні стилі для контенту -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--first-main-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+img {
+  display: block;
+}
+/* -------------------- Загальні стилі списків -------------------- */
+/* .list {
+  list-style: none;
+} */
+/* -------------------- Загальні стилі кнопок -------------------- */
+.button {
+  cursor: pointer;
+  font-family: inherit;
+}
+.container {
+  /* width: 100%; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* -------------------------------------------------------------------- */
+/* ==================================================================== */
+
+/* -------------------- Шапка сайту -------------------- */
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+}
+/* -------------------- Оформлення Лого ---------------- */
+/* ##################################################### */
+.logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+}
+.logo .header-logo {
+  color: var(--second-main-color, #212121);
+}
+/* #################################################### */
+
+/* -------------------- Стилі списків заголовку ---------- */
+.list-navigation {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: 90px;
+  /* border: 1px solid dodgerblue; */
+}
+.list-navigation .list-navigation-link {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-main-color);
+}
+.list-navigation .list-navigation-link:hover,
+.list-navigation .list-navigation-link:focus {
+  color: var(--hover-link-color, red);
+}
+.list-contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.list-contacts .list-contacts-link {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--first-main-color);
+}
+.list-contacts .list-contacts-link:hover,
+.list-contacts .list-contacts-link:focus {
+  color: var(--hover-link-color, red);
+}
+/* -------------------- Контент головної сторінки ---------- */
+/* -------------------- Основний контент main ---------- */
+.top-content {
+  padding: 200px 0;
+  text-align: center;
+  background: var(--background-block-color, rgba(118, 1, 1, 0.979));
+}
+.top-content-tittle {
+  max-width: 695px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-main-color, #000);
+}
+.top-button {
+  padding: 10px 30px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: var(--background-button-color, red);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-main-color);
+}
+/* -------------------- Перелік особливостей компанії ---------- */
+.section {
+  padding: 94px 0;
+}
+.list-info {
+  display: flex;
+  gap: 30px;
+}
+.info-card {
+  /* <li> */
+  min-width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
+}
+.info-card-tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--second-main-color);
+}
+.info-card-content {
+  line-height: 1.72;
+  color: var(--first-main-color);
+}
+/* -------------------- Перелік стеку компанії ---------- */
+
+.steck-company {
+  padding-top: 0;
+}
+/* --------------- Загальні стилі заголовків двох секцій ----- */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--second-main-color);
+}
+/* ------------------------------------------------------------ */
+.steck-list {
+  display: flex;
+  gap: 30px;
+}
+.list-section {
+  /* <li> */
+  max-width: 370px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.steck-list .list-section img {
+  width: 100%;
+}
+/* -------------------- Дані працівників компанії ---------- */
+
+.team-section {
+  padding-top: 92px;
+  padding-bottom: 96px;
+  background: #f5f4fa;
+}
+
+.team-section .team-list {
+  display: flex;
+  gap: 30px;
+}
+.team-list .worker-card {
+  /* <li> */
+  max-width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list .worker-card img {
+  width: 100%;
+}
+.worker-info {
+  padding: 30px 0;
+  background: var(--third-main-color);
+  border-radius: 0px 0px 4px 4px;
+}
+.worker-info .worker-info-header {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-main-color);
+}
+.worker-info .worker-info-content {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-main-color);
+}
+/* ################################################### */
+/* ---------- Контент зі сторінки Портфоліо ---------- */
+/* ################################################### */
+/* .portfolio-content { */
+/* padding: 100px 0 85px; */
+/* text-align: center; */
+/* } */
+.filtration-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.filtration-button {
+  border: none;
+  background: #f5f4f4;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-main-color);
+}
+.filtration-button:hover {
+  color: var(--third-main-color);
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.content-cards-item {
+  /* <li> */
+  max-width: 370px;
+  flex-basis: calc((100% - 60px) / 3);
+  /* border-bottom: 1px solid #f2f2f2; */
+}
+.content-cards-item img {
+  width: 100%;
+}
+.content-cards-item .item-content {
+  padding: 20px 24px;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+.content-cards-item .item-content .item-content-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-main-color);
+}
+.content-cards-item .item-content .item-content-description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--first-main-color);
+}
+/* ################################### */
+/* ---------- Футер контент ---------- */
+/* ################################### */
+
+.main-footer {
+  background: var(--background-block-color);
+  padding: 60px 0;
+}
+.botom-logo {
+  color: var(--third-main-color);
+}
+.block-address {
+  margin-top: 20px;
+}
+.footer-contacts .footer-contacts-item {
+  /* <li> */
+  line-height: 1.72;
+  margin-bottom: 10px;
+}
+.footer-contacts .footer-contacts-item:last-child {
+  margin-bottom: 0;
+}
+.footer-contacts .footer-content {
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-main-color);
+}
+.footer-contacts .contact {
+  color: rgba(255, 255, 255, 0.6);
+}
