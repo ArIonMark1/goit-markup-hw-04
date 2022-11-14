@@ -319,17 +319,25 @@ img {
   background: var(--background-block-color);
   padding: 60px 0;
 }
+/* ----------- Контейнер яякому задав загальний параметр для футера ----------- */
 .footer-container {
-  outline: 1px solid red;
+  outline: 1px solid var(--background-button-color);
   display: flex;
+}
+.logo {
+  border: 1px solid greenyellow;
 }
 .botom-logo {
   color: var(--third-main-color);
 }
-/* -------------------------- */
+/* ----------------------------------------------------------- */
+/* ------------ Загальні параметри списків футера ------------ */
 .block-address {
   outline: 1px solid tomato;
-  gap: 70px;
+  margin-right: 70px;
+}
+.block-address:last-child {
+  margin-right: 0;
 }
 .footer-contacts {
   margin-top: 20px;
@@ -353,18 +361,13 @@ img {
 .footer-contacts .contact {
   color: rgba(255, 255, 255, 0.6);
 }
-.second-addr-bc {
-  background: #1d5685c5;
-  margin-left: 70px;
-}
 .social-links-header {
   font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  border: 1px solid greenyellow;
   color: var(--third-main-color);
-  margin-bottom: 20px;
 }
 .social-links-container {
   display: flex;
