@@ -314,31 +314,26 @@ img {
 /* ################################### */
 /* ---------- Футер контент ---------- */
 /* ################################### */
-
 .main-footer {
   background: var(--background-block-color);
   padding: 60px 0;
 }
-/* ----------- Контейнер яякому задав загальний параметр для футера ----------- */
+/* ----------- Контейнер якому задав загальний параметр для футера ----------- */
 .footer-container {
-  outline: 1px solid var(--background-button-color);
+  /* outline: 1px solid var(--background-button-color); */
   display: flex;
-}
-.logo {
-  border: 1px solid greenyellow;
+  align-items: baseline;
 }
 .botom-logo {
   color: var(--third-main-color);
 }
-/* ----------------------------------------------------------- */
-/* ------------ Загальні параметри списків футера ------------ */
 .block-address {
-  outline: 1px solid tomato;
+  outline: 1px solid turquoise;
   margin-right: 70px;
 }
-.block-address:last-child {
-  margin-right: 0;
-}
+/* ----------------------------------------------------------- */
+/* ------------ Загальні параметри списків футера ------------ */
+
 .footer-contacts {
   margin-top: 20px;
 }
@@ -361,13 +356,17 @@ img {
 .footer-contacts .contact {
   color: rgba(255, 255, 255, 0.6);
 }
+.second-addr-bc {
+  outline: 1px solid rgb(102, 0, 255);
+}
+/* ----------- Social links styles ----------- */
 .social-links-header {
   font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  border: 1px solid greenyellow;
   color: var(--third-main-color);
+  /* outline: 1px solid greenyellow; */
 }
 .social-links-container {
   display: flex;
