@@ -110,7 +110,16 @@ img {
 .top-content {
   padding: 200px 0;
   text-align: center;
-  background: var(--background-block-color, rgba(118, 1, 1, 0.979));
+  background-color: var(--background-block-color, rgba(118, 1, 1, 0.979));
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/team.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: 1600px 100%;
 }
 .top-content-tittle {
   max-width: 695px;
@@ -148,7 +157,7 @@ img {
 }
 .info-card {
   /* <li> */
-  min-width: 270px;
+  max-width: 270px;
   flex-basis: calc((100% - 90px) / 4);
 }
 .info-card-tittle {
@@ -278,9 +287,9 @@ img {
   /* <li> */
   max-width: 370px;
   flex-basis: calc((100% - 60px) / 3);
-  /* border-bottom: 1px solid #f2f2f2; */
+  /* flex-grow: 1; */
 }
-.content-cards-item img {
+.content-cards-item > img {
   width: 100%;
 }
 .content-cards-item .item-content {
@@ -310,12 +319,22 @@ img {
   background: var(--background-block-color);
   padding: 60px 0;
 }
+.footer-container {
+  outline: 1px solid red;
+  display: flex;
+}
 .botom-logo {
   color: var(--third-main-color);
 }
+/* -------------------------- */
 .block-address {
+  outline: 1px solid tomato;
+  gap: 70px;
+}
+.footer-contacts {
   margin-top: 20px;
 }
+/* -------------------------- */
 .footer-contacts .footer-contacts-item {
   /* <li> */
   line-height: 1.72;
@@ -333,4 +352,33 @@ img {
 }
 .footer-contacts .contact {
   color: rgba(255, 255, 255, 0.6);
+}
+.second-addr-bc {
+  background: #1d5685c5;
+  margin-left: 70px;
+}
+.social-links-header {
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--third-main-color);
+  margin-bottom: 20px;
+}
+.social-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-links-container .container-link {
+  width: 44px;
+  height: 44px;
+}
+.social-links-container .container-link .social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  background: red;
 }
