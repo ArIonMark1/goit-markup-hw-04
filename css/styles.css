@@ -225,18 +225,19 @@ img {
   width: 100%;
 }
 .worker-info {
-  padding: 30px 0;
+  padding: 30px 32px;
   background: var(--third-main-color);
   border-radius: 0px 0px 4px 4px;
+  /* outline: 1px solid var(--background-button-color); */
 }
 .worker-info .worker-info-header {
-  margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-main-color);
+  margin-bottom: 10px;
 }
 .worker-info .worker-info-content {
   font-size: 16px;
@@ -244,7 +245,31 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-main-color);
+  margin-bottom: 16px;
 }
+/* -------------------- Стилі соціальних лінків працівників ---------- */
+
+.worker-soc-container {
+  /* outline: 2px solid teal; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.container-soc-link {
+  /* <li> */
+  width: 44px;
+  height: 44px;
+  /* outline: 1px solid hotpink; */
+}
+.soc-link {
+  display: inline-block;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #2196f3;
+}
+
 /* ################################################### */
 /* ---------- Контент зі сторінки Портфоліо ---------- */
 /* ################################################### */
