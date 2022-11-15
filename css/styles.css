@@ -58,6 +58,7 @@ img {
 /* ##################################################### */
 .logo {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
@@ -353,7 +354,7 @@ img {
   color: var(--third-main-color);
 }
 .block-address {
-  outline: 1px solid turquoise;
+  /* outline: 1px solid turquoise; */
   margin-right: 70px;
 }
 /* ----------------------------------------------------------- */
@@ -381,9 +382,9 @@ img {
 .footer-contacts .contact {
   color: rgba(255, 255, 255, 0.6);
 }
-.second-addr-bc {
+/* .second-addr-bc {
   outline: 1px solid rgb(102, 0, 255);
-}
+} */
 /* ----------- Social links styles ----------- */
 .social-links-header {
   font-size: inherit;
