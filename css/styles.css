@@ -98,8 +98,7 @@ img {
 }
 .list-contacts .list-contacts-link {
   display: flex;
-  display: inline-block;
-  align-items: baseline;
+  gap: 10px;
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
@@ -107,8 +106,7 @@ img {
   color: var(--first-main-color);
 }
 .link-ico {
-  /* display: flex; */
-  /* align-items: baseline; */
+  display: block;
   fill: currentColor;
 }
 .list-contacts .list-contacts-link:hover,
