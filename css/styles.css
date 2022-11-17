@@ -233,7 +233,7 @@ img {
 .team-section .team-list {
   display: flex;
   gap: 30px;
-  background-color: var(--third-main-color);
+  /* background-color: var(--third-main-color); */
 }
 .team-list .worker-card {
   /* <li> */
