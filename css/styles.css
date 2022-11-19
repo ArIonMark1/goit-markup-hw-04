@@ -154,7 +154,8 @@ img {
   letter-spacing: 0.06em;
   color: var(--third-main-color);
 }
-.top-button:hover {
+.top-button:hover,
+.top-button:focus {
   background: #188ce8;
 }
 /* -------------------- Перелік особливостей компанії ---------- */
